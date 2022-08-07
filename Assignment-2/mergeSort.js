@@ -7,8 +7,6 @@ function mergeSort(arr) {
   return merge(sortedLeft, sortedRight);
 }
 
-console.log(mergeSort([1, 7, 4, 5]));
-
 // Merges 2 sorted arrays
 function merge(left, right) {
   let merged = [];
