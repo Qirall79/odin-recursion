@@ -14,7 +14,10 @@ function merge(left, right) {
   let merged = [];
   let i = 0;
   let j = 0;
+
+  // Continue until one array is empty
   while (left.length !== i && right.length !== j) {
+    // Insert smallest element into merged array
     if (left[i] < right[j]) {
       merged.push(left[i]);
       i++;
@@ -23,6 +26,7 @@ function merge(left, right) {
       j++;
     }
   }
+  // insert remaining array to merged array
   if (left.length === i) {
     merged = merged.concat(right.slice(j));
   } else {
